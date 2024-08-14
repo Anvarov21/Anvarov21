@@ -224,3 +224,61 @@
 #     print( f'Максимальное: {m_max}' )
 
 
+# a = [1,1,2,3,5,8,13,21,34,55,89]    #Задание номер 1
+# newlist = [x for x in a if x<5]
+# print(newlist)
+
+
+# a = [1,1,2,3,5,8,13,21,34,55,89]     #Задание номер 2
+# b = [1,2,3,4,5,6,7,8,9,10,11,12,13] 
+# y = set(a)
+# z = set(b)
+# set3 = y & z
+# print(set3)
+
+
+# list = ["banana","cherry","apple","orange","kiwi"]   #Задание номер 3
+# list.sort()
+# print(list)
+
+
+# my_dict = {'a':500, 'b':5874, 'c':560, 'd':400, 'e':5874, 'f':20}   #Задание номер 5
+# print(sorted(my_dict.values())[-3:])
+
+
+# a = "Hello world"    #Задание номер 18
+# print(len(a))
+
+
+# a = 12     #Задание калькулятор
+# b = 6
+# result = a + b
+# print(f"Сложенный результат {result}")
+# result1 = a - b
+# print(f"Минусный результат {result1}")
+# result2 = a * b 
+# print(f"Умноженный результат {result2}")
+# result3 = a / b
+# print(f"Деленный результат {result3}")
+
+
+# number = int(input("Give me random number"))   #Задание проверка на четность
+# if number % 2 ==0:
+#     print("Четное")
+# else:
+#     print("Нечетное")
+
+
+# list = [45,2356,654,52,42,1541,2,154,14]  #Задание номер 7
+# print(sum(list))
+
+
+# son = 2    #Задание номер 1
+# while True:
+#     a = int(input("Угадай число"))
+#     if a == son:
+#         print("Good job")
+#     elif a > son:
+#         print("Твое число больше")
+#     else:
+#         print("Твое число меньше")

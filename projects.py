@@ -178,8 +178,10 @@
 # print(list)
 
 
-set1 = {"apple", "banana", "cherry","apple"}
-print(set1)
+# set1 = {"apple", "banana", "cherry"}      #Задание номер 5
+# set2 = {"google", "microsoft", "apple"}
+# set3 = set1.intersection(set2)
+# print(set3)
 
 
 # set1 = {"apple", "banana", "cherry"}     #Задание номер 6

@@ -113,16 +113,112 @@
 # except Exception:
 #     print("Прости повтори занова")
 
+   
+# try:    #Задание номер 5
+#     stroka = input("Give me random number")
+#     result=int(stroka)
+#     print(f"Преобразованный результат {result}")
+#     if result>=0:
+#        print("Хорошо")
+#     else:
+#        print("Отличная работа")
+# except ValueError:
+#   print("Ошибка")
+# finally:
+#    print("Удачи")
 
-try:
-    stroka = input("Give me random number")
-    result=int(stroka)
-    print(f"Преобразованный результат {result}")
-    if result>=0:
-       print("Хорошо")
-    else:
-       print("Отличная работа")
-except ValueError:
-  print("Ошибка")
-finally:
-   print("Удачи")
+
+# try:       #Задание номер 1
+#     number = int(input("Give me random number"))
+#     if number % 2 ==0:
+#         print("Четное")
+#     else:
+#         print("Нечетное")
+# except ValueError:
+#     print("Попытайся снова")
+
+# A = []       #Задание номер 2
+# for _ in range(5):
+#    a = int(input('Give me random number'))
+# A.append(int(a))
+# m_min = A[0]
+# for i in A:
+#     if m_min > i:
+#        m_min = i
+#     print( f'Минимальное: {m_min}' )
+
+# for x in range(101):     #Задание номер 4
+#     pass
+# summa = x*(x+1)/2
+# print(summa)
+
+# numbers = [5,6,2,4,88,62,100]        #Задание номер 6
+# numbers.sort()
+# print(numbers)
+
+
+# a = int(input("Give me random number1"))     #Задание номер 7
+# b = int(input("Give me random number2"))
+# print("Все простые числа") 
+# for number in range(a,b+ 1): 
+#     if number > 1: 
+#         for i in range(2, number): 
+#             if(number % i) == 0: 
+#                 break 
+#         else: 
+#             print(number) 
+
+
+# a = input("Write your essay")     #Задание номер 1
+# print(len(a))
+
+
+# list = [5,6,35,78,9,45,61,100]    #Задание номер 2
+# list.reverse()
+# print(list)
+
+
+set1 = {"apple", "banana", "cherry","apple"}
+print(set1)
+
+
+# set1 = {"apple", "banana", "cherry"}     #Задание номер 6
+# set2 = {"google", "microsoft", "apple"}
+# set3 = set1.intersection(set2)
+# print(set3)
+
+
+# number = int(input("Give me random number"))    #Задание номер 1
+# i = 1
+# while i < number :
+#     print(i)
+#     i+=1
+
+
+# x = 100     #Задание номер 2
+# i = 0
+# while i <= x :
+#     print(i)
+#     i+=1 
+#     break
+# summa = x*(x+1)/2
+# print(summa)
+
+
+# a = ""      #Задание номер 6
+# while a != "password123":
+#     a = input("Ведите пароль")
+# print("Добро пожаловать")
+
+
+# A = []       #Задание номер 7
+# for _ in range(5):
+#    a = int(input('Give me random number'))
+# A.append(int(a))
+# m_max = A[0]
+# for i in A:
+#     if m_max < i:
+#        m_max = i
+#     print( f'Максимальное: {m_max}' )
+
+

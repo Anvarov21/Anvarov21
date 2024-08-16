@@ -282,3 +282,20 @@
 #         print("Твое число больше")
 #     else:
 #         print("Твое число меньше")
+
+
+# filename =  "project.txt"         #Калькулятор
+# with open(filename,'w') as file :
+#     file.write("This is for you")
+# a = 20
+# b = 10 
+# result = a + b
+# result1 = a - b
+# result2 = a * b
+# result3 = a / b
+# with open(filename,'a') as file:
+#     file.write(f"Первая цифра {a} вторая цифра {b} результат плюса {result}")
+#     file.write(f"Первая цифра {a} вторая цифра {b} результат минуса {result1}")
+#     file.write(f"Первая цифра {a} вторая цифра {b} результат умножение {result2}")
+#     file.write(f"Первая цифра {a} вторая цифра {b} результат деление {result3}")
+# print(f"Я решил {filename}")

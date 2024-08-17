@@ -284,18 +284,34 @@
 #         print("Твое число меньше")
 
 
-# filename =  "project.txt"         #Калькулятор
-# with open(filename,'w') as file :
-#     file.write("This is for you")
-# a = 20
-# b = 10 
-# result = a + b
-# result1 = a - b
-# result2 = a * b
-# result3 = a / b
-# with open(filename,'a') as file:
-#     file.write(f"Первая цифра {a} вторая цифра {b} результат плюса {result}")
-#     file.write(f"Первая цифра {a} вторая цифра {b} результат минуса {result1}")
-#     file.write(f"Первая цифра {a} вторая цифра {b} результат умножение {result2}")
-#     file.write(f"Первая цифра {a} вторая цифра {b} результат деление {result3}")
-# print(f"Я решил {filename}")
+filename = "projects.txt"
+def math(a,b,c) :
+        with open(filename,'w') as file :
+          file.write(f"First number is {a},second number is {b} result is {c}")
+try:
+    a = float(input("Give me random number1"))
+    z = input("Какую операцию нужно сделать ?")
+    b = float(input("Give me random number2"))
+    c = 0
+    if z== '+' :
+        c = a + b
+        math(a,b,c)
+    elif z=='-':
+        c = a - b
+        math(a,b,c)
+    elif z=='*':
+        c = a * b
+        math(a,b,c)
+    elif z=='/':
+        c = a / b
+        math(a,b,c)
+    elif z=='**':
+        c = a ** b
+        math(a,b,c)
+    else:
+        print("Ошибка")
+except ZeroDivisionError:
+    print("Деление на ноль нельзя")
+except ValueError:
+    print("Повтори еще")
+

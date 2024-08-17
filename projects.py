@@ -284,34 +284,34 @@
 #         print("Твое число меньше")
 
 
-filename = "projects.txt"
-def math(a,b,c) :
-        with open(filename,'w') as file :
-          file.write(f"First number is {a},second number is {b} result is {c}")
-try:
-    a = float(input("Give me random number1"))
-    z = input("Какую операцию нужно сделать ?")
-    b = float(input("Give me random number2"))
-    c = 0
-    if z== '+' :
-        c = a + b
-        math(a,b,c)
-    elif z=='-':
-        c = a - b
-        math(a,b,c)
-    elif z=='*':
-        c = a * b
-        math(a,b,c)
-    elif z=='/':
-        c = a / b
-        math(a,b,c)
-    elif z=='**':
-        c = a ** b
-        math(a,b,c)
-    else:
-        print("Ошибка")
-except ZeroDivisionError:
-    print("Деление на ноль нельзя")
-except ValueError:
-    print("Повтори еще")
+# filename = "projects.txt"      #Калькулятор
+# def math(a,b,c) :
+#         with open(filename,'w') as file :
+#           file.write(f"First number is {a},second number is {b} result is {c}")
+# try:
+#     a = float(input("Give me random number1"))
+#     z = input("Какую операцию нужно сделать ?")
+#     b = float(input("Give me random number2"))
+#     c = 0
+#     if z== '+' :
+#         c = a + b
+#         math(a,b,c)
+#     elif z=='-':
+#         c = a - b
+#         math(a,b,c)
+#     elif z=='*':
+#         c = a * b
+#         math(a,b,c)
+#     elif z=='/':
+#         c = a / b
+#         math(a,b,c)
+#     elif z=='**':
+#         c = a ** b
+#         math(a,b,c)
+#     else:
+#         print("Ошибка")
+# except ZeroDivisionError:
+#     print("Деление на ноль нельзя")
+# except ValueError:
+#     print("Повтори еще")
 

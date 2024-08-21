@@ -315,3 +315,35 @@
 # except ValueError:
 #     print("Повтори еще")
 
+
+# class TriangleChecker:
+#    def __init__(self,a,b,c):
+#       self.a = a
+#       self.b = b
+#       self.c = c
+#    def is_triangle(self):
+#       if self.a > self.b + self.c :
+#           return ("Можно построить треугольник")
+#       elif self.b > self.c + self.a :
+#           return ("Можно построить треугольник")
+#       elif self.c > self.a + self.b :
+#           return ("Можно построить треугольник")
+#       else:
+#           return ("Жаль но из этого треугольника не сделать")
+# try:
+#    a = float(input("Give me random number a:"))
+#    b = float(input("Give me random number b:"))
+#    c = float(input("Give me random number c:"))
+#    values = TriangleChecker(a,b,c)
+#    if a < 0 or b < 0 or c < 0 :
+#        print("Отрицательными числами не выйдет")
+#    else:
+#        print("Можно")
+# except ValueError:
+#     print("Нужно водить только числа")
+
+
+
+
+
+

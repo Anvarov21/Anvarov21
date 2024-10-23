@@ -1,16 +1,16 @@
-#def get_season(number):
-    #if number < 4:
-        #return "Весна"
-    #elif number < 7:
-        #return "Лето"
-    #elif number < 10:
-        #return "Осень"
-    #elif number < 13:
-        #return "Зима"
-    #else:
-        #return "Ошибка"
-#number = int(input("Введите число: "))
-#print(get_season(number))   
+# def get_season(number):
+#     if number < 4:
+#         return "Весна"
+#     elif number < 7:
+#         return "Лето"
+#     elif number < 10:
+#         return "Осень"
+#     elif number < 13:
+#         return "Зима"
+#     else:
+#         return "Ошибка"
+# number = int(input("Введите число: "))
+# print(get_season(number))   
 
 #import math
 #kvadrat koren

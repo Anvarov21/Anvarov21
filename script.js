@@ -469,25 +469,46 @@
 // document.write(minNum)
 
 
+// let obj ={
+//     age:14,
+//     hobby: 'football'
+// }
+// let copy_obj = Object.assign({}, obj)
+// document.write(copy_obj)
+
+
+// let obj ={
+//     age:14,
+//     hobby: 'football'
+// }
+// let copy_obj = { ... obj}
+// document.write(copy_obj)
 
 
 
+// function test(name,age = 10){
+//     let b = 5
+
+//     document.write("My name is " + name + "<br>" + "I am " + age + " years old")
+// }
+
+// test('Alex',7)
 
 
 
+// let a = prompt("Give me random number")
+// let b = prompt("Give me random number")
+
+// if (a  == b){
+//     document.write("Отправлен на один объект")
+// }else{
+//     document.write("Не отправляются на одинн объект ")
+// }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// let first = {
+//     name:'Alex',
+//     age:14
+// }
+// let copied = structuredClone(first)
+// document.write("My name is " + copied.name + "<br/>" + "I am " + copied.age + " years old")

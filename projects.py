@@ -12,11 +12,11 @@
 # number = int(input("Введите число: "))
 # print(get_season(number))   
 
-#import math
-#kvadrat koren
-#number = 25
-#koren = math.sqrt(number)
-#print(f"Kvadrat koren iz {number} raven {koren}")
+# import math
+# # kvadrat koren
+# number = 25
+# koren = math.sqrt(number)
+# print(f"Kvadrat koren iz {number} raven {koren}")
 
 #import math
 #b = 2

@@ -260,9 +260,9 @@
 # print(f"Умноженный результат {result2}")
 # result3 = a / b
 # print(f"Деленный результат {result3}")
+ 
 
-
-# number = int(input("Give me random number"))   #Задание проверка на четность
+# number = float(input("Give me random number"))   #Задание проверка на четность
 # if number % 2 ==0:
 #     print("Четное")
 # else:
@@ -273,7 +273,7 @@
 # print(sum(list))
 
 
-# son = 2    #Задание номер 1
+# son = 51   #Задание номер 1
 # while True:
 #     a = int(input("Угадай число"))
 #     if a == son:
@@ -342,8 +342,73 @@
 # except ValueError:
 #     print("Нужно водить только числа")
 
+# import datetime
+# a = datetime.datetime.now()
+# print(a.strftime('%B'))
+
+
+# import datetime
+# a = datetime.datetime.now()
+# print(a)
+
+# import datetime
+# x = datetime.datetime.now()
+# print(x.strftime('%Y'))
+# print(x.strftime('%B'))
+# print(x.strftime('%A'))
+# print(x.strftime('%M'))
+# print(x.strftime('%S'))
+
+
+# import turtle 
+
+# def myglobal():
+#    t = turtle.Pen()
+#    a = t
+#    t.speed(0)
+#    for x in range (100):
+#        t.left(90)
+#        t.forward(x)
+#    return a
+# a = myglobal()
+
+    
+
+# def myglobl():
+#    z = turtle.Pen();
+#    z.speed(0)
+#    for y in range (5600):
+#        z.left(60)
+#        z.forward(y)
+#    return z
+# z = myglobl()
 
 
 
 
 
+
+
+
+# import turtle
+# def myfunc():
+#    t = turtle.Pen()
+#    a = t
+#    t.speed(0)
+#    for x in range (100):
+#        t.left(90)
+#        t.forward(x)
+#    return a
+
+
+
+# def secondfunc():
+#     z = turtle.Pen();
+#     z.speed(0)
+#     for y in range (5600):
+#         z.left(60)
+#         z.forward(y)
+# secondfunc()
+
+# result = eval(input("Какая задача?"))
+# print(result)

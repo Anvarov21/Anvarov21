@@ -512,3 +512,129 @@
 // }
 // let copied = structuredClone(first)
 // document.write("My name is " + copied.name + "<br/>" + "I am " + copied.age + " years old")
+
+
+
+// let person = {
+//     name:"Alex",
+//     age:14,
+//     introduce(){
+//         let example = () => document.write("My name is " + this.name + "<br/>" + "I am " + this.age + " years old")
+//         example()
+//     }
+// }
+// person.introduce()
+
+
+// function Car(brand,model){
+//     this.brand = "BMW";
+//     this.model = "M5"
+// }
+// let name = new Car();
+// document.write("Car brand: " + name.brand + "<br/>" + 'Model: ' + name.model)
+
+
+// function Car(brand,model){
+//     this.brand = brand;
+//     this.model = model;
+//     this.startEngine = function() {
+//         let enginer = () => document.write("Двигатель " + this.brand + " " + this.model + " запущен")
+//         enginer()
+//     }
+// }
+
+
+// a = new Car('BMW',"M5");
+// document.write(a.startEngine())
+
+
+
+// const numbers = [1,3,24,4,5,7]
+// const even = numbers.some(num => num % 2 === 0);
+// document.write(even)
+
+// function fakt(n)
+// {
+//     let num = 0
+//     for(let i = 0; i <= n; i++){
+//         num = num + i;
+//     }
+//     return num;
+// }
+// document.write(fakt(3))
+
+
+// function fakt(n)      // faktorial
+// {
+//     let num = 1
+//     for(let i = 1; i <= n; i++){
+//         num *= i
+//     }
+//     return num;
+// }
+// document.write(fakt(6))
+
+
+
+//1 Глобальный объект
+//2 Объект функции, NFE -> named function expressions
+//3 Синтаксис "new Function"
+//4 Планирование: setTimeout и setInterval
+
+// 1 function checkGlobal()
+// {
+//     alert(window.location.href); // global object
+// }
+
+// 2 let factorial = function fact(n)
+// {
+//     return n <= 1 ? 1 : n * fact(n - 1);
+// }
+
+// document.write(factorial(4))
+
+// 3
+
+// let sum = new Function('a','b','return a + b');
+// document.write(sum(4,5))
+// function sum(a,b)
+// {
+//     return a + b
+// }
+// document.write(sum(5,4))
+
+// 4
+
+// setTimeout(() => {
+//     document.getElementById('output').innerHTML = 'Amir ti 2 nik';
+// }, 5000);
+
+// let diyor = 0
+// let interVal = setInterval(() => {
+//     diyor++;
+//     document.write("Diyor delaet uspexi:", diyor);
+//     document.write("<br>")
+//     if (diyor === 3)
+//     {
+//         document.write("On prowel 2 modul")
+//         clearInterval(interVal);
+//     }
+// },3000)
+
+
+// let globalVar = 'Hello'
+// function checkGlobal(){
+//     console.log(window.globalVar);
+// }
+// checkGlobal()
+
+// function check(){
+//     if (window.opener === null){
+//         document.write('Открыта в новой в кладке ')
+//     }else{
+//         document.write('Не открыта в новой в кладке')
+//     }
+// }
+// check()
+
+

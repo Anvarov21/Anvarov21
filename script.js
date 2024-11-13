@@ -374,23 +374,23 @@
 //         break;
 // }
 
-    // function checkMyAge(age)
-    // {
-    //     if (age > 18){
-    //         return true;
-    //     }else{
-    //         return false
-    //     }
-    // }
+// function checkMyAge(age)
+// {
+//     if (age > 18){
+//         return true;
+//     }else{
+//         return false
+//     }
+// }
 
-    // let age = prompt("How old are you?", 18)
+// let age = prompt("How old are you?", 18)
 
 
-    // if (!checkMyAge(age)){
-    //     document.write("Mumkinamas aziz")
-    // }else{
-    //     document.write("lekin ortoginga mumkin!")
-    // }
+// if (!checkMyAge(age)){
+//     document.write("Mumkinamas aziz")
+// }else{
+//     document.write("lekin ortoginga mumkin!")
+// }
 
 
 // function min(a,b){
@@ -636,5 +636,243 @@
 //     }
 // }
 // check()
+
+
+// Декораторы и переадресация вызова, call/apply
+// Привязка контекста к функции bind
+// Повторяем стрелочные функции
+
+// function firstDec(tarGet)
+// {
+//     document.write(tarGet)
+//     return function(...arr)
+//     {
+//         document.write(`This is deco:${arr}`)
+//         document.write("<br>")
+//         return tarGet.apply(this,arr)
+//     }
+// }
+
+// function sum(a,b)
+// {
+//     return a + b
+// }
+
+// let decoratedSum = firstDec(sum)
+// document.write(decoratedSum(5,3))
+
+// call
+// function greet()
+// {
+//     document.write(`Diyor peresajivay, ${this.name}`)
+// }
+
+
+// const user = {
+//     name:'Diyor peresajivaysa'
+// };
+
+// greet.call(user);
+
+// apply 
+
+// function ter(a,b)
+// {
+//     return a + b
+// }
+
+// const args = [10,40];
+// document.write(ter.apply(null,args))
+
+
+// bind
+// let user = {
+//     name: "Diyor peresajivaysa",
+//     greet(){
+//         document.write(`Diyor davay uje peresajivaysa, ${this.name}`);
+//     }
+// }
+
+// let a = user.greet.bind(user);
+// setTimeout(a,5000)
+
+//  =>
+
+// let num = [1,2,3,4,5,6,7]
+// let double = num.map(n => n * 2)
+// document.write(double)
+
+
+// let user = {
+//     name: "Diyor peresajivaysa",
+//     place: ["kuda 2 partu","ili na 3 partu"],
+//     amir(){
+//         this.place.forEach(hobby => {
+//             document.write(`${this.name}, i Amir ${hobby}`)
+//         });
+//     }
+// }    
+
+
+// user.amir()
+
+
+// function greet()
+// {
+//     document.write(`Name is ${this.name}, Age is ${this.age}`)
+// }
+// const user = {
+//     name:'Aloxon',
+//     age:14
+// };
+// greet.call(user)
+
+// let user = {
+//     name:"A'loxon",
+//     sayHello(){
+//         document.write(`Hello ${this.name}`)
+//     }
+// }
+// const person = user.sayHello.bind(user)
+// setTimeout(person,5000)
+
+
+// function multiply(a,b)
+// {
+//     return a * b
+// }
+// let a = multiply.bind(null,2);
+// document.write(a(5))
+
+
+// const counter = {
+//     count:0,
+//     addcount(){
+//         const increase = () => {
+//             this.count +=1
+//         };
+//         increase()
+//     }
+// }
+// counter.addcount()
+// document.write(counter.count)
+
+
+// function animation()
+// {
+//     const animate = document.getElementById('btn')
+//     let position = 0
+//     const interval = setInterval(moveanimate,3)
+//     function moveanimate(){
+//         if (position === 500)
+//         {
+//             clearInterval(interval)
+//         }else{
+//             position++;
+//             animate.style.left = position + 'px'
+//         }
+//     }
+// }
+
+// class Car{
+//     constructor(brand,model)
+//     {
+//         this.brand = brand,
+//         this.model = model
+//     }
+//     intro(){
+//         return `This car ${this.brand} ${this.model} the fastest car in the world `
+//     }
+// }
+// let a = new Car('BMW','M5 CS')
+// document.write(a.intro())
+
+
+// function checker()     //Изменение текста при нажатии
+// {
+//     document.getElementById('mainTitle').innerHTML = 'Привет мир'
+// }
+
+// const boxes = document.querySelectorAll('.container');
+// boxes.forEach(container => {
+//   container.style.backgroundColor = 'black';
+// });
+
+// function high()   Изменение цвета круга
+// {
+//   const circle = document.querySelector('.circle')
+//   circle.classList.toggle('light');
+// }
+
+
+
+
+
+
+
+// class Person {
+//     constructor(name, age, gender) {
+//         this.name = name,
+//             this.age = age,
+//             this.gender = gender
+//     }
+//     sayHello() {
+//         return `Привет меня зовут ${this.name}, Мне ${this.age} лет`
+//     }
+// }
+// let a = new Person("A'loxon", 14, 'Мальчик')
+// document.write(a.sayHello())
+
+
+
+
+
+// class Person {
+//     constructor(name, age, gender) {
+//         this.name = name,
+//             this.age = age,
+//             this.gender = gender
+//     }
+//     sayHello() {
+//         return `Привет меня зовут ${this.name}, Мне ${this.age} лет`
+//     }
+// }
+// let a = new Person("A'loxon", 14, 'Мальчик')
+// class Student extends Person{
+//     constructor(name,age,gender,course){
+//         super(name,age,gender)
+//         this.course = course
+//     }
+//     introduce(){
+//         return `Привет меня зовут ${this.name},Я учусь на ${this.course} курсе`
+//     }
+// }
+// let b = new Student("A'loxon",14,'Мальчик',3)
+// document.write(b.introduce())
+
+
+
+
+// function change()
+// {
+//     document.getElementById('header').innerHTML = 'Измененный текст'
+// }
+
+
+
+
+
+// function red()
+// {
+//     document.getElementById('text').style.color = 'red'
+// }
+// function yellow()
+// {
+//     document.getElementById('text').style.color = 'yellow'
+// }
+// function blue()
+// {
+//     document.getElementById('text').style.color = 'blue'
+// }
 
 

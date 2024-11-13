@@ -361,7 +361,6 @@
 
 
 # import turtle 
-
 # def myglobal():
 #    t = turtle.Pen()
 #    a = t
@@ -372,7 +371,6 @@
 #    return a
 # a = myglobal()
 
-    
 
 # def myglobl():
 #    z = turtle.Pen();
@@ -382,12 +380,6 @@
 #        z.forward(y)
 #    return z
 # z = myglobl()
-
-
-
-
-
-
 
 
 # import turtle
@@ -412,3 +404,24 @@
 
 # result = eval(input("Какая задача?"))
 # print(result)
+
+
+# num = int(input("Enter a value:"))             #Palindrome
+# a = num 
+# b = 0 
+# while(num > 0): 
+#     dig = num % 10 
+#     b = b * 10 + dig 
+#     num = num // 10 
+# if(a == b): 
+#     print("It's palindrome") 
+# else: 
+#     print("It isn't palindrome") 
+
+
+
+
+
+
+
+
